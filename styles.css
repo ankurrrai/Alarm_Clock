@@ -1,0 +1,181 @@
+/* Implementaion for all */
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* For Background Picture */
+
+body {
+	background-image: url(clock_background.jpg);
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+	opacity: 0.8;
+}
+
+/* Used screen */
+
+#screen-display {
+  width: 70%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px;
+  /* border-color: black;
+  border-style: solid;  */
+  justify-content: center;
+  margin: auto;
+  padding: 10px;
+}
+/* Setting the property for clock */
+#clock{
+  height: 40%;
+  width: 100%;
+  /* border-style: dotted; */
+  display: flex;
+  align-items: flex-start;
+  justify-content:center;
+}
+#timestam {
+  font-size: 100px;
+  text-align: center;
+  text-justify:auto;
+  color: black;
+  margin: auto;
+  
+}
+
+#set-Alarm {
+   height: 20%;
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+
+}
+
+
+#panel-set-alarm {
+  padding: auto;
+  width: 20%;
+  height: 30%; 
+}
+
+.option-time {
+  color: #fff;
+  background-color:#050505;
+  border-color: #050505;
+  /* margin-top: 5px; */
+  min-width: 90px;
+  min-height: 20px;
+  padding: 5px 5px;
+  font-size: 13px;
+  line-height: 1.6;
+  border-radius: 0;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+/* common class for center the text */
+.text-center {
+  text-align: center;
+}
+
+/* alarm btn styling */
+.alarm-btn {
+  color: #fff;
+  background-color:#050505;
+  border-color: #050505;
+  height: 80%;
+  width: 80%;
+  margin-top: 5px;
+  min-width: 90px;
+  min-height: 20px;
+  padding: 8px 12px;
+  font-size: 13px;
+  line-height: 1.6;
+  border-radius: 0;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 8px 12px;
+  margin-right: 5px;
+  margin-bottom: 2px;
+}
+
+/* Alarm list section */
+
+#alarm-list-section {
+  width: 80%;
+  height: 30%;
+  padding: auto;
+  margin: 10px;
+}
+
+/* headers */
+#alarms-header {
+  width: 10px;
+  height: 20px;
+  
+}
+
+/* Added property for unordered list */
+
+ul{
+  width: 100%;
+  height: 80%;
+  overflow: auto;
+  margin-top: 5px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+ul li {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: inherit;
+  align-items: center;
+}
+ul li:hover {
+  background: #f3f3f3;
+}
+
+#list label {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Delete svg */
+.delete {
+  height: 28px;
+  padding: 5px 0px;
+  border-radius: 3px;
+}
+.delete:hover {
+  background: #f2f2f2;
+  cursor: pointer;
+}
+
+/* For total number of active alarms */
+#total-count {
+  margin-bottom: 20px;
+  font-size: 13px;
+  margin-left: 2px;
+  color: rgb(19, 19, 19);
+}

@@ -1,0 +1,53 @@
+
+<html>
+  <head>
+    <title>Alarm Clock</title>
+    <meta name="msapplication-TileImage" content="clock_background.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/0498cfb1c8.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <h1 class="text-center">Alarm Clock</h1>
+    <div id="screen-display" class="display-box">
+        <section id="clock">
+          <span id="timestam">12:20:10 AM</span>
+        </section>
+        <section id="set-Alarm" class="section-set-alarm">
+          <span id="select-time">
+            <select id="select-hour" class="option-time">
+            </select>
+            <select id="select-min" class="option-time"></select>
+            <select id="select-AM-PM" class="option-time">
+              <option value="AM">AM</option>
+              <option value="PM">PM</option>
+            </select>
+          </span>
+          <span id="panel-set-alarm" class="text-center">
+            <button id="btn-alarm-btn" class="btn alarm-btn" class="text-center"> Set Alarm</button>
+          </span>
+          
+        </section>
+
+        <section id="alarm-list-section">
+          <div id="alarms-header" class="text-center">
+            <h3>Alarms</h3>
+          </div>
+          <div>
+            <ul id="list">
+              <li>
+                <label for="task1">Sample</label>
+                 <img src="bin.svg" class="delete" data-id="12" />
+              </li>  
+            </ul>
+          </div>
+        </section>
+        <section id="total-count">
+          <span>Active Alarm : </span>
+          <span id="alarm-count">0</span>
+        </section>
+    </div>
+    <script src="alarm.js"></script>
+  </body>
+  
+</html>
